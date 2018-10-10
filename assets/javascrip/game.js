@@ -32,18 +32,14 @@ $("#object2").on("click", function(){
    result += object2
  $("#result").text(result);
 
+ win()
+
 })
 
 $("#object3").on("click", function(){
 
     result += object3
-    
-     
-     
-
-     $("#result").text(result);
-
-     
+$("#result").text(result);
 
      win()
     
@@ -52,12 +48,9 @@ $("#object3").on("click", function(){
 $("#object4").on("click", function(){
 
     result += object4
-
-  
-     $("#result").text(result);
+$("#result").text(result);
  
- 
-   win() 
+  win() 
 
 })
 
@@ -69,7 +62,6 @@ function win() {
         $("#wins").text(wins);
         result = 0
         $("#result").text(result);
-        console.log(wins)
         alert("you win")
         randomNumber = Math.floor((Math.random() * 40) + 20);
         $("#number-to-guess").text(randomNumber);
