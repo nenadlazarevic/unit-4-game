@@ -1,13 +1,13 @@
-var randomNumber = Math.floor((Math.random() * 40) + 20);
+var randomNumber = Math.floor((Math.random() * 100) + 20);
 console.log(randomNumber)
 
 $("#number-to-guess").text(randomNumber);
 
 
-var object1 = Math.floor((Math.random() * 10) + 1);
-var object2 = Math.floor((Math.random() * 10) + 1);
-var object3 = Math.floor((Math.random() * 10) + 1);
-var object4 = Math.floor((Math.random() * 10) + 1);
+var object1 = Math.floor((Math.random() * 20) + 1);
+var object2 = Math.floor((Math.random() * 20) + 1);
+var object3 = Math.floor((Math.random() * 20) + 1);
+var object4 = Math.floor((Math.random() * 20) + 1);
 
 var wins = 0
 $("#wins").text(wins);
@@ -63,7 +63,7 @@ function win() {
         result = 0
         $("#result").text(result);
         alert("you win")
-        randomNumber = Math.floor((Math.random() * 40) + 20);
+        randomNumber = Math.floor((Math.random() * 100) + 20);
         $("#number-to-guess").text(randomNumber);
         
         
@@ -76,7 +76,7 @@ function win() {
         result = 0
         $("#result").text(result);
         alert("you lost");
-        randomNumber = Math.floor((Math.random() * 40) + 20);
+        randomNumber = Math.floor((Math.random() * 100) + 20);
         $("#number-to-guess").text(randomNumber);
         
         
